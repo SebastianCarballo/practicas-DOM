@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarea 1 Clase 1 Aplicando DOM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+
+<body>
+    <p>Crear una función que tome como parámetro el año actual y el año de nacimiento</p>
+    <p>y calcule la edad del usuario (más o menos).</p>
+    <p>Preguntarle estos datos al usuario y guardarlos en 2 variables</p>
+    <p>Ejecutar la función con estos datos</p>
+    <p> Impriman el resultado en la consola</p><br><br>
+
+    <main>
+        <form class="form" onsubmit="return false" ;>
+            <label for="anio-actual">Ingrese Año Actual:</label>
+            <input type="number" id="anio-actual" placeholder="Año actual ej:2022">
+
+            <label for="anio-nacimiento-usuario">Ingrese Año Nacimiento:</label>
+            <input type="number" id="anio-nacimiento-usuario" placeholder="Año nacimiento ej:1995"><br><br>
+            
+            
+            <button class="calcular-edad-usuario">Calcular Edad</button>
+            <button type="reset" id="borrar">Borrar</button>
+        </form><br><br>
+            
+        
+        <strong class="resultado"></strong>
+    </main>
+
+
+    <script src='tarea-1-DOM.js'></script>
+</body>
+
+</html>
