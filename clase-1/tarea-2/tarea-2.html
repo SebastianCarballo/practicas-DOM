@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tarea 2 - clase 1</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <h1>Tarea 2 - Clase 1</h1>
+    <p>Preguntar el salario anual y calcular el salario mensual</p>
+    <p>Preguntar el salario mensual y calcular el anual</p>
+    <p>diario... semanal, por hora. etc.</p>
+
+    <form onsubmit="return false;">
+        <main>
+            <div>
+                <label for="salario-anual-usuario">Ingrese su Salario Anual:</label>
+                <input type="number" id="salario-anual-usuario" placeholder="ej: $1000000">
+
+                <label for="salario-mensual-usuario">Tu salario Mensual es de:</label>
+                <input disabled id="resultado-sueldo-mensual">
+
+                <button id="calcular-salario-mensual">Calcular</button>
+                <button type="reset" id="borrar">Borrar</button>
+
+            </div><br><br>
+             <div>
+                <label for="salario-mensual-usuario">Ingrese su Salario Mensual:</label>
+                <input type="number" id="salario-mensual-usuario" placeholder="ej: $50000">
+                <label for="salario-anual">Tu salario Anual es de:</label>
+                <input disabled id="resultado-sueldo-anual">
+                <button id="calcular-salario-anual">Calcular</button>
+                <button type="reset" id="borrar">Borrar</button>
+            </div><br><br>
+
+            <div>
+                <label for="salario-por-quincena-usuario">Ingrese su Salario por Quincena:</label>
+                <input type="number" id="salario-por-quincena-usuario" placeholder="ej: $25000">
+                <label for="salario-mensual">Tu salario Mensual es de:</label>
+                <input disabled id="resultado-sueldo-mensual-quincenas">
+                <button id="calcular-salario-por-quincena-usuario">Calcular</button>
+                <button type="reset" id="borrar">Borrar</button>
+            </div><br><br>
+
+    </form>
+    </main>
+    <script src='tarea-2.js'></script>
+</body>
+
+</html>
